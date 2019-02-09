@@ -1,0 +1,1128 @@
+﻿/***************
+* YAZAR: UFUK BAKAN
+* ZORA1N STYLESHEET
+* 03.01.2019 -- DEVAM EDİYOR
+*
+*/
+
+
+
+  #zologo
+  {
+    transition: 0.5s;
+  }
+
+  .sign_in_up
+  {
+    transition: 0.5s;
+  }
+
+  .mid_block
+  {
+    transition: 0.5s;
+    color: #fff;
+    font-family: "Quaver Sans", "Calibri Light";
+    font-size: 24px;
+  }
+
+  .hoverlay:hover
+  {
+    cursor: pointer;
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+  }
+
+  .hoverlay:active
+  {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  }
+
+
+/* rgb(6,0,22) = #060016 */
+@media only screen and (max-width: 900px){
+
+  
+.logo img
+  {
+    user-select: none;
+    height: 100px;
+  }
+  
+  .logo:hover
+  {
+    cursor: pointer;
+  }
+  
+  .top_menu
+  {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #060016;
+    background-image: linear-gradient(180deg, rgba(29,45,107,1) 0%, rgba(72,117,117,1) 100%);
+    transition: 0.5s; 
+    
+  }
+  
+  .menu
+  {
+    user-select: none;
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-family: Sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .menu:hover
+  {
+    cursor: pointer;
+  }
+  
+  .top_menu input
+  {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  .open_menu
+  {
+    user-select: none;
+    font-family: sans-serif;
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #001333;
+    color: white;
+    width: 0px;
+    height: 100%;
+    padding-top: 50px;
+    display: block;
+    transition: 0.5s;
+    overflow: hidden;
+    font-size: 20px;
+    
+  }
+  
+  .header
+  {
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+  }
+  
+  
+  .header:after
+  {
+    content: "";
+    display: block;
+    width: 0;
+    margin: auto;
+    height: 2px;
+    background-color: #fff;
+   	transition: .5s;
+  }
+  .header:hover
+  {
+    cursor: pointer;
+  }
+  
+  .header:hover:after
+  {
+    width: calc(100% - 10px);
+  }
+
+  .container
+  {
+    position: absolute;
+    margin-top: 50px;
+  }
+  
+  .container ul
+  {
+    list-style-type: square;
+  }
+  
+  .container li
+  {
+    margin-bottom: 10px;
+  }
+  
+  .mid_block
+  {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    height: calc(100% - 100px);
+    width: 100%;
+    overflow: auto;
+  }
+
+  .sign_in_up
+  {
+    display: none;
+  }
+
+  body
+  {
+    background-color: #111111;
+  }
+  
+  .top_search
+  {
+    display: none;
+  }
+
+  .sign_in_up_mobile
+  {
+    z-index: 11;
+    position: absolute;
+    display: block;
+    bottom: 100px;
+    left:  50%;
+    transform: translateX(-50%);
+  }
+
+  .mobile_sign_in
+  {
+    background-color: transparent;
+    border: 2px solid  rgb(116, 244, 66);
+    outline: none;
+    height: 50px;
+    width: 120px;
+    display: block;
+    margin: 10px;
+    position: relative;
+    font-family: "Calibri";
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .mobile_sign_up
+  {
+    color: #fff;
+    background-color: transparent;
+    display: block;
+    height: 50px;
+    width: 120px;
+    margin: 10px;
+    font-family: "Calibri";
+    outline: none;
+    border: 2px solid #136cf9;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .mobile_search
+  {
+    display: block;
+    left: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    position: absolute;
+    color: #fFf;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  .mobile_search input
+  {
+    display: none;
+  }
+
+  .mobile_search:hover
+  {
+    cursor: pointer;
+  }
+
+  .mobile_search_popup
+  {
+    z-index: 12;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin: 10px;
+    color: #fff;
+  }
+
+  #triangle
+  {
+    width: 300px;
+    height: 0;
+    border-bottom: 0 solid #fff;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    transition: 0.25s;
+    transition-delay: 0s;
+  }
+
+  #block
+  {
+    width: 300px; /* 300 default */
+    height: 0;
+    background-color: #fff;
+    position: absolute;
+    left: -125px; /* -125 d*/
+    top: 25px;
+    transition: 0.25s;
+    transition-delay: 0.25s;
+    border-radius: 5px;
+    transform-origin: 50% 50%;
+    margin-left: -40px;
+  }
+
+  .block_search
+  {
+    display: none;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+
+  .block_search_box
+  {
+    width: 80%;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .mobile_search_button
+  {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    width: 70px;
+    height: 50px;
+    font-size: 24px;
+    font-family: "Calibri";
+    font-weight: bold;
+    background-color: rgba(72,117,117,1);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+  }
+
+  .slider
+  {
+    display: none;
+  }
+
+  .trends_block
+  {
+    display: none;
+  }
+
+  #desktop_menu
+  {
+    display: none;
+  }
+
+  #article_container
+  {
+    display: none;
+  }
+
+}
+
+
+
+
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+/* MOBİL VE TABLET GÖRÜNÜM SONU */
+
+
+@media screen and (min-width: 901px){
+  .top_menu
+  {
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(6,0,22); /* rgb(6,0,22) = #060016 */
+    background-image: linear-gradient(180deg, rgba(29,45,107,1) 0%, rgba(72,117,117,1) 100%);
+    transition: 0.5s;
+    overflow: visible;
+  }
+
+  .top_menu img
+  {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .menulabel
+  {
+   display: none;
+  }
+
+  .sign_in_up
+  {
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(6,6,6);
+    color: rgba(255,255,255,1);
+    font-family: "Arial";
+    font-size: 15px;
+  }
+
+  .sign_upb
+  {
+    position: absolute;
+    top: 0;
+    right: -80px;
+    outline: none;
+    background-color: #136cf9;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    width: 75px;
+    font-family: "Calibri";
+    font-weight: bold;
+  }
+
+  .open_menu
+  {
+    display: none;
+  }
+
+  #sign_inb
+  {
+    background-color: rgb(116, 244, 66);
+    outline: none;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    width: 75px;
+    font-family: "Calibri";
+    font-weight: bold;
+    display: inline-block;
+  }
+
+
+
+  body
+  {
+    background-color: rgb(11,11,11);
+  }
+  
+  .mid_block
+  {
+    z-index: -1;
+    position: fixed;
+    top: 185px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 185px);
+    overflow: auto;
+  }
+
+  .top_search
+  {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .search_box
+  {
+    padding-left: 5px;
+    width: 0;
+    height: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translate(0,-50%);
+    display: inline-block;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+    padding: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+
+  .search_button
+  {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 70px;
+    height: 25px;
+    color: #fff;
+    background-color: #f48f42;
+    font-size: 14px;
+    font-family: "Calibri";
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(0,-50%);
+
+
+  }
+
+  .search_label:hover > .search_box
+  {    width: 160px;
+  }
+
+  .search_label
+  {
+    width: auto;
+    height: 25px;
+    margin: auto;
+    overflow: none;
+  }
+  
+  .container
+  {
+    position: absolute;
+    left: calc(50% - 80px);
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 25px;
+  }
+
+  .mobile_search
+  {
+    display: none;
+  }
+
+  .trends_block
+  {
+    position: fixed;
+    display: block;
+    right: 10px;
+    top: 190px;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+
+  .trends_block::-webkit-scrollbar
+  {
+    visibility: hidden;
+  }
+
+  .mid_block::-webkit-scrollbar
+  {
+    width: 10px;
+  }
+  .mid_block::-webkit-scrollbar-track
+  {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  .mid_block::-webkit-scrollbar-thumb
+  {
+    background-color: #f48f42;
+    border-radius: 10px;
+  }
+  .mid_block::-webkit-scrollbar-thumb:hover
+  {
+    background-color: #F29A5C;
+  }
+  .mid_block::-webkit-scrollbar-thumb:active
+  {
+    background-color: #9E5B2C;
+  }
+
+  .slider
+  {
+    position: relative;
+    display: block;
+    top: 10px;
+    left: 0;
+    margin: 10px;
+    width: calc(100% - 450px);
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .slider img
+  {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .slide_nav
+  {
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slide_nav input
+  {
+    visibility: hidden;
+  }
+
+  .checkmark
+  {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  .checkmark:hover
+  {
+    cursor: pointer;
+  }
+
+  .icons{
+    visibility: visible;
+    width:20px;
+    height:20px; 
+    margin-left: -25px;
+    margin-top: -2px;
+    position: absolute;
+  }
+  .picture_radio:checked ~ .checkmark
+  {
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  .picture_radio:checked ~ .checkmark:after
+  {
+  }
+
+  .trend_header
+  {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .category_container
+  {
+    position: relative;
+  }
+
+  .trends_block img
+  {
+    z-index: 0;
+    display: block;
+    width: 420px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .title
+  {
+    z-index: 1;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    transform: translate(-50%,-50%);
+  }
+
+  /*Masaüstü görünümü için Menu bar */
+  #desktop_menu
+  {
+    position: absolute;
+    left: 260px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 450px);
+    font-size: 28px;
+        transition: 0.5s;
+  }
+
+  .menu_item
+  {
+    display: inline-block;
+    color: #fff;
+    width: auto;
+    position: relative;
+    font-family: "Bellota Regular";
+    margin-right: 15px;
+  }
+
+  .menu_item:after
+  {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    transition: 0.5s;
+    background-color: #fFf;
+  }
+
+  .menu_item:hover
+  {
+    cursor: pointer;
+  }
+
+  .menu_item_kucuk
+  {
+    font-size: 14px;
+  }
+
+  .menu_item:hover:after
+  {
+    width: 100%;
+  }
+
+  .article_block
+  {
+    font-family: "Varela Regular";
+    position: relative;
+    box-sizing: border-box;
+    height: 150px;
+    left: 70px;
+    background-color: #777;
+    display: block;
+    width: calc(100% - 550px);
+    margin-bottom: 50px;
+  }
+
+  #article_container
+  {
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .article_image
+  {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline;
+  }
+
+  .article_image img
+  {
+    height: 170px;
+    box-sizing: border-box;
+    width: auto;
+  }
+
+  .article_header
+  {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .article_content
+  {
+    position: absolute;
+    left: 100px;
+    width: calc(100% - 120px);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 18px;
+    font-family: "Calibri";
+
+  }
+
+  .actions
+  {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: calc(100% - 100px);
+    height: 30px;
+    font-family: "Calibri";
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .action
+  {
+    position: relative;
+    font-size: 14px;
+    top: 40%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+
+  .action img
+  {
+    position: relative;
+    height: 20px;
+    width: auto;
+    bottom: -5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .action button
+  {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .action button img
+  {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .action button ~ .action_name
+  {
+    margin-left: 5px;
+  }
+
+  .action button:hover
+  {
+    cursor: pointer;
+  }
+
+  .action img:hover
+  {
+    cursor: pointer;
+  }
+
+  .action button:hover + .action_name
+  {
+    max-width: 220px;
+  }
+
+  .action_name
+  {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 0;
+    transition: 0.5s;
+  }
+
+  .action img:hover + .action_name
+  {
+    max-width: 220px;
+  } /*Kayıt Ol Popup---Kayıt Sekmesi*/
+  .register_input{
+    width: 70%;
+    height: 40px;        
+    text-align: center;
+    background-color: #FFF8DC;
+    color:black;
+    border-radius: 5px;
+    border:0px;
+    box-shadow:3px 3px 3px 4px #000;
+  }
+  .register_label{
+    float: left;
+    margin-left:15%;
+    color:whitesmoke;
+  }
+  .register_form{
+    margin-top:25px;
+    text-align: center;
+  }
+  .contractbox{
+    float:left;
+    margin-left:15%;
+  }
+  .contract{
+    float: left;
+    color:whitesmoke;
+  }
+  .contract a{
+    text-decoration: none;
+    color:gray;
+  }
+  .passinformation{
+    float: left;
+    margin-top:-5px;
+    margin-left: 15%;
+    color: red;
+    font-size:13px;
+  }
+  .registerbtn{
+    font-size:24px;
+    font-family: "Varela Regular";
+    width: 70%;
+    height: 40px;
+    background-color: lightcyan;
+    border: 0px;
+    box-shadow: 3px 3px 4px 4px #000;
+  }
+/*Kayıt Ol Popup---Kayıt Sekmesi*//*Kayıt Ol Popup---E-Posta Onayla Sekmesi*/
+  .epostaonaybtn{
+    width: 70%;
+    height: 40px;
+    margin-top:60px;
+    font-size:19px;
+    font-family:"Varela Regular";
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px 4px #000;
+  }
+  .epostainformation{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 17px;
+    font-family: "Varela Regular";
+  }
+  #tab2_content{
+    text-align: center;
+  }
+/*Kayıt Ol Popup---E-Posta Onayla Sekmesi*/
+/*Kayıt Ol Popup---Giriş Yap Sekmesi BAŞLANGIÇ*/
+  .sign_input{        
+    width: 70%;
+    height: 40px;        
+    text-align: center;
+    background-color: #FFF8DC;
+    color:black;
+    border-radius: 5px;
+    border:0px;
+    box-shadow:3px 3px 3px 4px #000;
+  }
+  .sign_label{  
+    margin-top: 25px;   
+    color:whitesmoke;
+  }
+  .sign_form{
+    width: 100%;
+    position: absolute;
+    margin-top:25px;
+    text-align: center;
+  }
+  .forgotpass{
+    margin-left:30%;
+    text-decoration: none;
+    color:red;
+  }
+  .signbtn{        
+    font-size:24px;
+    font-family: "Varela Regular";
+    width: 70%;
+    height: 40px;
+    background-color: lightcyan;
+    border: 0px;
+    box-shadow: 3px 3px 4px 4px #000;
+  }
+/*Kayıt Ol Popup---Giriş Yap Sekmesi BİTİŞ*/
+
+/* DROPDOWN BAŞLANGIÇ */
+
+.dropdown_menu
+{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 90;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.8);
+  transition: 0.2s;
+}
+
+.menu_item:hover > .dropdown_menu
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown_item
+{
+  left: 5px;
+  display: block;
+  font-size: 14px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.dropdown_item a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* DROPDOWN BİTİŞ */
+
+/* Email onay barı başlangıç */
+
+#mail_verify
+{
+  z-index: 25;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #f4ce42;
+}
+
+.mail_verify_content
+{
+  font-size: 13px;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Calibri";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* 900px-1600px arası ekranlar için CSS bitişi. */
+}
+
+/* 1360px ve üzerinde yazıların gözükmesi */
+@media screen and (min-width: 1360px)
+{
+  .action_name
+  {
+    display: inline;
+  }
+}
+
+/*Kayıt Ol Popup---Kayıt Sekmesi Responsive*/    
+@media screen and (max-height: 765px) {
+  .register_input{
+    height: 25px;  
+  }
+  .register_label{
+    float: left;
+    margin-left:15%;
+    font-size: 12px;
+    color:whitesmoke;
+  }
+  .register_form{
+    margin-top:15px;
+  }
+  .contract{
+    font-size: 12px;
+  }
+  .registerbtn{
+    font-size:14px;
+    font-family: "Varela Regular";
+    width: 70%;
+    height: 25px;
+    background-color: lightcyan;
+    border: 0px;
+    box-shadow: 3px 3px 4px 4px #000;
+  }      
+  .passinformation{
+    font-size:11px;
+  }
+  .epostaonaybtn{
+    font-size:14px;
+    height: 25px;
+  }
+  .epostainformation{
+    font-size:12px;
+  }
+  .sign_input{
+    height: 25px;
+  }
+  .sign_label{
+    font-size:12px;
+  }
+  .signbtn{
+    height: 25px;
+    font-size:14px;
+  }
+  .rememberme{
+    font-size:12px;
+  }
+  .forgotpass{
+    font-size: 12px;
+  }
+}
+/*Kayıt Ol Popup---Kayıt Sekmesi Responsive*/
+
+/*1600px üzeri ekranlar için CSS başlangıcı*/
+@media screen and (min-width: 1600px)
+{
+
+}
